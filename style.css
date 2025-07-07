@@ -19,21 +19,30 @@
 
 }
 
+.content {
+    margin: 0 150px;
+    flex: auto;
+    padding: 10px;
+}
+
+body,
+body * {
+    display: flex;
+}
 
 body {
-    display: flex;
     flex-direction: column;
+    margin: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    gap: 50px;
 }
 
 .header {
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-    gap: 15px;
-    margin: 0 150px;
     background-color: var(--main-bg-colour);
+}
+
+.header .content {
+    align-items: baseline;
+    gap: 15px;
 }
 
 .header h2 {
@@ -49,57 +58,61 @@ body {
 }
 
 .jumbotron {
-    display: flex;
-    flex-wrap: wrap;
-    justify-items: flex-start;
-    flex-direction: column;
-    margin: 0 150px;
-    height: 200px;
     background-color: var(--main-bg-colour);
 }
 
-.jumbotron h1 {
+.jumbotron .content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+
+}
+
+.jumbotron .content h1 {
     font-size: var(--main-hero-text-size);
     font-weight: var(--main-hero-text-weight);
     color: var(--main-hero-text-colour);
 }
 
-.jumbotron p {
+.jumbotron .content p {
     font-size: var(--secondary-hero-text-size);
     color: var(--secondary-hero-text-colour);
 }
 
-button {
+.jumbotron .content button {
     background-color: var(--button-bg-colour);
     width: 100px;
     color: var(--main-hero-text-colour);
     border-radius: 8px;
 }
 
-img {
-    align-self: flex-start;
+.jumbotron .content img {
     margin-left: auto;
 }
 
-.gallery-container {
-    background-color: white;
-    display: flex;
+.gallery-item ,
+.gallery-container .content {
     flex-direction: column;
     align-items: center;
 }
 
+.gallery-item,
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin: 0 150px;
+    gap: 10px
 }
 
 .gallery-item {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 
+.gallery-item img {
+    border-radius: 8px;
+    outline: solid var(--button-bg-colour) 2px;
+}
+
+quote
+
+.quote .content {
+
+}
