@@ -1,0 +1,26 @@
+:root {
+    --main-bg-colour: #1f2937;
+    --main-font: "Roboto";
+    --main-hero-text-colour: #f9faf8;
+    --main-hero-text-size: 48px;
+    --main-hero-text-weight: 900;
+    --secondary-hero-text-size: 18px;
+    --secondary-hero-text-colour: #e5e7eb;
+    --main-logo-text-size: 24px;
+    --main-logo-text-colour: #f9faf8;
+    --button-bg-colour: #3882f6
+    --information-header-text-size: 36px;
+    --information-header-text-colour: #1f2937;
+    --information-header-text-weight: 900;
+    --quote-bg-colour: #e5e7eb;
+    --quote-text-size:36px;
+    --quote-text-colour: #1f2937;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-bg-colour);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
