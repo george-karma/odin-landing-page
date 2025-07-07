@@ -8,33 +8,35 @@
     --secondary-hero-text-colour: #e5e7eb;
     --main-logo-text-size: 24px;
     --main-logo-text-colour: #f9faf8;
-    --button-bg-colour: #3882f6
+    --button-bg-colour: #3882f6;
     --information-header-text-size: 36px;
     --information-header-text-colour: #1f2937;
     --information-header-text-weight: 900;
     --quote-bg-colour: #e5e7eb;
-    --quote-text-size:36px;
+    --quote-text-size: 36px;
     --quote-text-colour: #1f2937;
     --quote-text-font-style: italic;
-    
+
 }
+
 
 body {
     display: flex;
     flex-direction: column;
-    background-color: var(--main-bg-colour);
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    gap: 50px;
 }
 
-.header{
+.header {
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
     gap: 15px;
     margin: 0 150px;
+    background-color: var(--main-bg-colour);
 }
 
-.header h2{
+.header h2 {
     color: var(--main-logo-text-colour);
     font-size: var(--main-logo-text-size);
     margin-right: auto;
@@ -45,3 +47,59 @@ body {
     font-size: var(--secondary-hero-text-size);
     text-decoration: none;
 }
+
+.jumbotron {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: flex-start;
+    flex-direction: column;
+    margin: 0 150px;
+    height: 200px;
+    background-color: var(--main-bg-colour);
+}
+
+.jumbotron h1 {
+    font-size: var(--main-hero-text-size);
+    font-weight: var(--main-hero-text-weight);
+    color: var(--main-hero-text-colour);
+}
+
+.jumbotron p {
+    font-size: var(--secondary-hero-text-size);
+    color: var(--secondary-hero-text-colour);
+}
+
+button {
+    background-color: var(--button-bg-colour);
+    width: 100px;
+    color: var(--main-hero-text-colour);
+    border-radius: 8px;
+}
+
+img {
+    align-self: flex-start;
+    margin-left: auto;
+}
+
+.gallery-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 150px;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
