@@ -37,7 +37,7 @@ body {
 }
 
 body > * {
-    padding: 2% 0%;
+    padding: 1.5% 0%;
 }
 
 .header {
@@ -63,6 +63,7 @@ body > * {
 
 .jumbotron {
     background-color: var(--main-bg-colour);
+    padding-bottom:  50px;
 }
 
 .jumbotron .content {
